@@ -2,46 +2,73 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+    <!--<![endif]-->
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Dog App</title>
-        <meta name="description" content="An app for finding dog images.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
+        <meta name="description" content="An app for finding dog images." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="main.css" />
     </head>
     <body>
         <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+            <p class="browsehappy">
+                You are using an <strong>outdated</strong> browser. Please
+                <a href="#">upgrade your browser</a> to improve your experience.
+            </p>
         <![endif]-->
         <div class="app">
             <h1 class="app-header">Find Random Dog Pictures!</h1>
-            <p class="app-description">Select how many random dog pictures you would like, sit back, and enjoy the photos.</p>
+            <p class="app-description">
+                Select how many random dog pictures you would like, sit back,
+                and enjoy the photos.
+            </p>
             <form id="first-form">
-                <label for="how-many-dogs" class="form-label">How many dog pictures would you like to see?</label>
+                <label for="how-many-dogs" class="form-label"
+                    >How many dog pictures would you like to see?</label
+                >
                 <fieldset>
-                    <input type="text" class="how-many-dogs" name="how-many-dogs" value="3"><button class="submit random-button">Find Dogs</button>
+                    <input
+                        type="text"
+                        class="how-many-dogs"
+                        name="how-many-dogs"
+                        value="3"
+                    /><button class="submit random-button">Find Dogs</button>
                 </fieldset>
+                <p class="error-message"></p>
             </form>
-            <div class="image-container random"><img class="random hide"></div>
+            <div class="image-container random">
+                <img class="random hide" />
+            </div>
         </div>
         <div class="app">
             <h1 class="app-header">Find Your Favorite Breed!</h1>
-            <p class="app-description">Fill out the form below with your desired breed and we'll find a photo just for you.</p>
+            <p class="app-description">
+                Fill out the form below with your desired breed and we'll find a
+                photo just for you.
+            </p>
             <form id="second-form">
-                <label for="dog-breed" class="form-label">What dog breed are you looking for?</label>
+                <label for="dog-breed" class="form-label"
+                    >What dog breed are you looking for?</label
+                >
                 <fieldset>
-                    <input type="text" class="type-of-dog" name="type-of-dog"><button class="submit breed-button">Find Dogs</button>
+                    <input
+                        type="text"
+                        class="type-of-dog"
+                        name="type-of-dog"
+                    /><button class="submit breed-button">Find Dogs</button>
                 </fieldset>
             </form>
-            <div class="image-container breed"><img class="breed hide"></div>
+            <div class="image-container breed"><img class="breed hide" /></div>
         </div>
         <script
             src="https://code.jquery.com/jquery-3.4.1.js"
             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-            crossorigin="anonymous">
-        </script>
+            crossorigin="anonymous"
+        ></script>
         <script src="main.js" async defer></script>
     </body>
 </html>

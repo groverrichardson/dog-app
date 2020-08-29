@@ -1,12 +1,15 @@
 function watchRandomSubmit() {
     $('button.random-button').click((event) => {
         event.preventDefault();
-        console.log(event);
+        let input = $('.how-many-dogs').val();
         $(`.image-container.random`).empty();
-        if (event.currentTarget.value < 50) {
+        if (input >= 1 && input <= 50) {
             console.log('hi there');
         } else {
             throw new Error('Value needs to be between 1 and 50');
+        };
+        try(err) {
+            $('.error-message').text(Error);
         }
     });
 }

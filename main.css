@@ -3,7 +3,7 @@
     padding: 0px;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -20,7 +20,7 @@ body{
 }
 
 h1 {
-    margin-bottom: .3em;
+    margin-bottom: 0.3em;
 }
 
 fieldset {
@@ -31,7 +31,7 @@ fieldset {
 
 button {
     margin-left: 1em;
-    padding: .5em;
+    padding: 0.5em;
 }
 
 form {
@@ -40,7 +40,7 @@ form {
 }
 
 input {
-    padding: .5em;
+    padding: 0.5em;
 }
 
 .dog-image {

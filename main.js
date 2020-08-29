@@ -3,13 +3,14 @@ function watchRandomSubmit() {
         event.preventDefault();
         let input = $('.how-many-dogs').val();
         $(`.image-container.random`).empty();
-        if (input >= 1 && input <= 50) {
-            console.log('hi there');
-        } else {
-            throw new Error('Value needs to be between 1 and 50');
-        };
-        try(err) {
-            $('.error-message').text(Error);
+        try {
+            if (input >= 1 && input <= 50) {
+                fetchImages();
+            } else {
+                throw new Error('Value needs to be between 1 and 50');
+            }
+        } catch (error) {
+            $('error-message').text(`this works`);
         }
     });
 }

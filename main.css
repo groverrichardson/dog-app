@@ -48,3 +48,7 @@ input {
     width: 11em;
     object-fit: cover;
 }
+
+.error-message {
+    color: red;
+}
